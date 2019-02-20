@@ -12,13 +12,11 @@ export default class MasterHog extends Component {
     }
   }
 
-
   changeEyeColor = (e) => {
     this.setState({
       eyeColor: e.target.value
     })
   }
-
 
   render() {
     return (
@@ -40,9 +38,9 @@ export default class MasterHog extends Component {
         </div>
         
         <ul className="hoglist">
-          <BabyHog eyeColor={this.state.eyeColor}/>
-          <BabyHog eyeColor={this.state.eyeColor}/>
-          <BabyHog eyeColor={this.state.eyeColor}/>
+          <BabyHog eyeColor={this.state.eyeColor} name={offspring[0].name} hobby={offspring[0].hobby}/>
+          <BabyHog eyeColor={this.state.eyeColor} name={offspring[1].name} hobby={offspring[1].hobby}/>
+          <BabyHog eyeColor={this.state.eyeColor} name={offspring[2].name} hobby={offspring[2].hobby}/>
         </ul>
 
       </div>
